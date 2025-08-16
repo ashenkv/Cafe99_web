@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Cafe99</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class=" bg-black text-white">
+    
+    <!-- Background Image with Overlay -->
+    <div class="relative w-full h-screen">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <img src="https://m.media-amazon.com/images/I/719WDTZBGOL._AC_UF894,1000_QL80_.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50">
+        
+        <!-- Home Content -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center gap-10 text-center">
+            <h1 class="text-7xl font-bold font2">Cafe 99</h1>
+            <h2 class="text-5xl">Lorem ipsum dolor sit amet consectetur.</h2>
+            <a href="#" class="px-6 py-3 text-2xl bg-yellow-400 text-gray-900 rounded-sm transition hover:bg-yellow-500">View Gallery</a>
+        </div>
+    </div>
+
+    <!--nav lg  -->
+    <div class="fixed top-0 z-50 w-full hidden grid-cols-3 p-6 text-lg text-white bg-black opacity-80 shadow-md lg:grid">
+        <div class="flex gap-5">
+            <a href="#" class="duration-300 hover:text-yellow-400">Home</a>
+            <a href="#" class="duration-300 hover:text-yellow-400">About</a>
+            <a href="#" class="duration-300 hover:text-yellow-400">Gallery</a>
+            <a href="#" class="duration-300 hover:text-yellow-400">Book Table</a>
+        </div>
+
+        <div class="">
+            <a href="#" class="flex justify-center text-4xl text-yellow-400 font2">Cafe99</a>
+        </div>
+
+        <div class="flex justify-end gap-5">
+            <a href="#" class="duration-300 hover:text-yellow-400">Blog</a>
+            <a href="#" class="px-2 py-1 duration-300 bg-white rounded-sm cursor-pointer hover:bg-yellow-500 text-slate-900">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- nav mobile -->
+    <div class="absolute top-0 block w-full text-white ull bg-slate-900 opacity-80 lg:hidden">
+        <div id="navSm" class="items-center block p-10 text-lg lg:hidden">
+            <div class="flex justify-between">
+                <a href="" class="flex justify-center text-4xl text-yellow-400 font2">Cafe99</a>
+                <a onclick="menuOpen()" class="cursor-pointer" id="menuIcon"><i class="text-3xl text-white hover:text-yellow-500 fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+
+        <div id="menuItems" class="hidden p-10 text-lg text-white ull lg:hidden">
+            <a onclick="menuClose()" id="menuIcon" class="flex justify-end cursor-pointer">
+                <i class="text-3xl hover:text-yellow-500 fa-solid fa-close"></i>
+            </a>
+            <ul class="flex flex-col justify-center gap-4 text-center">
+                <li><a href="#" class="duration-300 hover:text-yellow-400">Home</a></li>
+                <li><a href="#" class="duration-300 hover:text-yellow-400">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <div class="mt-20 relative z-10"> -->
+        <!-- About Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
+            <div class="">
+                <img src="../assets/images/cafeImg2.jpg" class="w-full shadow-lg">
+            </div>
+            <div class="flex flex-col gap-6 pt-9 lg:pt-0 px-8 lg:px-20 bg-black bg-opacity-80 h-full w-full justify-center">
+                <h1 class="text-7xl font-bold">About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus maiores distinctio itaque voluptatum nam commodi dolores ad nesciunt corporis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus maiores distinctio itaque voluptatum nam commodi dolores ad nesciunt corporis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus maiores distinctio.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus maiores distinctio itaque voluptatum nam commodi dolores ad nesciunt corporis.</p>
+            </div>
+        </div>
+
+        <!-- menu -->
+        <div class="py-24">
+            <h1 class="text-7xl text-center uppercase">Our Menu</h1>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-1">
+            <a href="#" class="group"><img src="https://cdn.shopify.com/s/files/1/0424/8862/7355/files/SquareColdBrewMasonJar_PDP_2048px_03.png?v=1709072581&width=400&height=400&crop=center"
+                class="w-full shadow-md transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl cursor-pointer"></a>
+            <a href="#" class="group"><img src="https://images.squarespace-cdn.com/content/v1/58ada2f22994ca421c48a1e6/1679877243523-WFBONCV9WHZ7QB11BUP9/square3.jpg"
+                class="w-full shadow-md transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl cursor-pointer"></a>
+            <a href="#" class="group"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2357KzkHOXz4jWTWauVJ4MKWYZSTuenazWA&s"
+                class="w-full shadow-md transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl cursor-pointer"></a>
+            <a href="#" class="group"><img src="https://cdn.shopify.com/s/files/1/0502/7014/2625/files/SquareColdBrewMasonJar_PDP_2048px_04.png?v=1708983749&width=400&height=400&crop=center"
+                class="w-full shadow-md transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl cursor-pointer"></a>
+            
+            <a href="#" class="group"><img src="https://assets-eu-01.kc-usercontent.com/559bb7d3-88a4-01c1-79a3-dd4d5b2d2bb0/d1b29117-29c3-4989-ac45-845322b2a618/Plaited-Cheese-and-Herb-Bread-SQUARE-5.jpg"
+                class="w-full shadow-md transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl cursor-pointer"></a>
+            <a href="#" class="group"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/F2lCykdOrnAb_c7xQsYHIw/348s.jpg"
+                class="w-full shadow-md transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl cursor-pointer"></a>
+            <a href="#" class="group"><img src="https://c2.staticflickr.com/4/3940/33040555280_d9497a2635.jpg"
+                class="w-full shadow-md transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl cursor-pointer"></a>
+            <a href="#" class="group"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgBYsNQTm6I9975CpPeb9PkRUV-T_120Hw9Q&s"
+                class="w-full shadow-md transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl cursor-pointer"></a>
+        </div>
+
+        <!-- book table -->
+        <div class="pt-24">
+            <h1 class="text-7xl text-center uppercase pb-20">Book Table</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 px-4 text-slate-900">
+                <input type="email" class="p-4 bg-slate-300 border border-gray-300 focus:border-yellow-400 outline-none uppercase" placeholder="Email">
+                <input type="number" class="p-4 bg-slate-300 border border-gray-300 focus:border-yellow-400 outline-none uppercase" min="1" placeholder="Number Of Guests">
+                <input type="time" class="p-4 bg-slate-300 border border-gray-300 focus:border-yellow-400 outline-none uppercase" placeholder="Email">
+                <input type="date" class="p-4 bg-slate-300 border border-gray-300 focus:border-yellow-400 outline-none uppercase" placeholder="Email">
+            </div>
+            <div class="pt-20 flex justify-center">
+                <a href="#" class="px-6 py-3 text-2xl bg-yellow-400 text-gray-900 rounded-sm transition hover:bg-yellow-500 uppercase">Find Table</a>
+            </div>
+        </div>
+
+        <!-- events cafe99 -->
+        <div class="pt-24">
+            <h1 class="text-7xl text-center uppercase pb-10">EVENTS AT THE CAFE99</h1>
+
+            <div class="py-2 flex justify-center gap-10 pb-10">
+                <a href="#" onclick="a()" class="py-2 px-5 bg-yellow-400 hover:bg-slate-900 rounded-sm">Drinks</a>
+                <a href="#" onclick="a()" class="py-2 px-5 bg-slate-600">Beverages</a>
+            </div>
+
+            <div class="container mx-auto">
+                <div class="grid-cols-1 md:grid-cols-3 gap-5">
+                    <div class="columns-1 w-full p-8">
+
+                    </div>
+                </div>
+                <div></div>
+            </div>
+
+            
+        </div>
+    <!-- </div> -->
+
+    <script src="../Js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home - cafe99</title>
+
+    <link rel="stylesheet" href="../Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+
+</head>
+<body class="">
+
+    <!-- <div class="absolute font-mono text-4xl top-4 box">Box</div> -->
+    <!-- <div class="flex flex-row"> 
+        <div class="p-10 bg-red-400 w-[20px]">Box1</div>
+        <div class="p-10 bg-red-400">Box2</div>
+        <div class="p-10 bg-red-400 grow">Box3</div>
+    </div> -->
+
+    <div class="">
+        <div class="inset-0">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+            <img src="../assets/images/bg1.png" class="absolute inset-0 w-full h-full object-cover opacity-30">
+            
+            <!-- Home Content -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center gap-5 text-white">
+                <h1 class="text-7xl font2">Cafe 99</h1>
+                <h1 class="text-5xl font3">Lorem ipsum dolor sit amet consectetur.</h1>
+                <a href="" class="px-3 py-2 text-2xl duration-300 bg-yellow-400 rounded-sm text-slate-900 hover:bg-yellow-500">View Gallery</a>
+            </div>
+        </div>
+        
+        
+         <!--nav lg  -->
+        <div class="fixed top-0 items-center hidden w-full grid-cols-3 p-6 text-lg text-white bg-slate-900 opacity-80 lg:grid">
+            <div class="flex gap-5">
+                <a href="#" class="duration-300 hover:text-yellow-400">Home</a>
+                <a href="#" class="duration-300 hover:text-yellow-400">About</a>
+                <a href="#" class="duration-300 hover:text-yellow-400">Gallery</a>
+                <a href="#" class="duration-300 hover:text-yellow-400">Book Table</a>
+            </div>
+
+            <div class="">
+                <a href="#" class="flex justify-center text-4xl text-yellow-400 font2">Cafe99</a>
+            </div>
+
+            <div class="flex justify-end gap-5">
+                <a href="#" class="duration-300 hover:text-yellow-400">Blog</a>
+                <a href="#" class="px-2 py-1 duration-300 bg-white rounded-sm cursor-pointer hover:bg-yellow-500 text-slate-900">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- nav mobile -->
+        <div class="absolute top-0 block w-full text-white ull bg-slate-900 opacity-80 lg:hidden">
+            <div id="navSm" class="items-center block p-10 text-lg lg:hidden">
+                <div class="flex justify-between">
+                    <a href="" class="flex justify-center text-4xl text-yellow-400 font2">Cafe99</a>
+                    <a onclick="menuOpen()" id="menuIcon"><i class="text-3xl text-white hover:text-yellow-500 fa-solid fa-bars"></i></a>
+                </div>
+            </div>
+    
+            <div id="menuItems" class="hidden p-10 text-lg text-white ull lg:hidden">
+                <a onclick="menuClose()" id="menuIcon" class="flex justify-end">
+                    <i class="text-3xl hover:text-yellow-500 fa-solid fa-close"></i>
+                </a>
+                <ul class="flex flex-col justify-center gap-4 text-center">
+                    <li><a href="#" class="duration-300 hover:text-yellow-400">Home</a></li>
+                    <li><a href="#" class="duration-300 hover:text-yellow-400">About</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- contents -->
+        <div class="container relative z-10 mx-auto">
+
+            <!-- home content -->
+            <!-- <div class="absolute inset-0 flex flex-col items-center justify-center gap-5 text-white">
+                <h1 class="text-7xl font2">Cafe 99</h1>
+                <h1 class="text-5xl font3">Lorem ipsum dolor sit amet consectetur.</h1>
+                <a href="" class="px-3 py-2 text-2xl duration-300 bg-yellow-400 rounded-sm text-slate-900 hover:bg-yellow-500">Contact Us</a>
+            </div> -->
+
+            <div>
+                <br>
+            </div>
+
+            <!-- about content -->
+            <div class="grid grid-cols-2">
+                <div class="columns-1">
+                    <img src="../assets/images/cafeImg2.jpg" class="w-full">
+                </div>
+                <div class="flex flex-col items-center justify-center gap-8 px-10 text-white bg-black columns-2">
+                    <h1 class="text-7xl font2">About Us</h1>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus maiores distinctio itaque voluptatum nam commodi dolores ad nesciunt corporis ducimus vel eius id, deleniti excepturi optio dolor recusandae aspernatur.</p>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus maiores distinctio itaque voluptatum nam commodi dolores ad nesciunt corporis ducimus vel eius id, deleniti excepturi optio dolor recusandae aspernatur.</p>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus maiores distinctio itaque voluptatum nam commodi.</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <script src="../Js/script.js"></script>
+</body>
+</html>
